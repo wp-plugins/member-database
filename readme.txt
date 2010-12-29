@@ -14,7 +14,7 @@ This plugin allows you to manage a database of membership info for your club or 
 
 == Installation ==
 
-* Upload to a directory named "member-db" in your wp-content/plugins/ directory.
+* Upload to a directory named "member-database" in your wp-content/plugins/ directory.
 * Activate the plugin using the 'Plugins' menu in your site's admin dashboard.
 
 == Frequently Asked Questions ==

@@ -25,7 +25,7 @@
 		foreach ($members as $value) {
 			printf ("<tr>
 				<td>%s %s</td>
-				<td><a href=\"admin.php?page=member-db/edit_member.php&action=edit&id=%s\">Edit</a> | <a href=\"admin.php?page=member-db/list_members.php&action=delete&id=%s\" onClick=\"return really();\">Delete</a></td></tr>"
+				<td><a href=\"admin.php?page=member-database/edit_member.php&action=edit&id=%s\">Edit</a> | <a href=\"admin.php?page=member-database/list_members.php&action=delete&id=%s\" onClick=\"return really();\">Delete</a></td></tr>"
 				, $value['first_name'], $value['last_name'], $value['id'], $value['id']);
 		}
 	}

@@ -64,7 +64,7 @@
 				$pos2 = strpos($column['Type'],')');
 				$size = substr($column['Type'], $pos1+1, $pos2-$pos1-1);
 				printf ("<td>
-					<form action=\"admin.php?page=member-db/edit_table.php\" method=\"post\">
+					<form action=\"admin.php?page=member-database/edit_table.php\" method=\"post\">
 						<input type=\"hidden\" name =\"action\" value=\"modify\">
 						<input type=\"hidden\" name =\"column_name\" value=\"%s\">
 						<input type=\"text\" name=\"type\" value=\"varchar\" size=\"8\">
@@ -73,7 +73,7 @@
 					</form>
 					</td>
 					<td>
-						<form action=\"admin.php?page=member-db/edit_table.php\" method=\"post\">
+						<form action=\"admin.php?page=member-database/edit_table.php\" method=\"post\">
 							<input type=\"hidden\" name =\"action\" value=\"delete\">
 							<input type=\"hidden\" name =\"column_name\" value=\"%s\">
 							<input type=\"submit\" value=\"Delete Field\" onClick=\"return really();\">
@@ -83,7 +83,7 @@
 			}
 			if ( substr($column['Type'],0,4)=='date' ){
 				printf ("<td>
-					<form action=\"admin.php?page=member-db/edit_table.php\" method=\"post\">
+					<form action=\"admin.php?page=member-database/edit_table.php\" method=\"post\">
 						<input type=\"hidden\" name =\"action\" value=\"modify\">
 						<input type=\"hidden\" name =\"column_name\" value=\"%s\">
 						<input type=\"text\" name=\"type\" value=\"date\" size=\"8\">
@@ -92,7 +92,7 @@
 					</form>
 					</td>
 					<td>
-						<form action=\"admin.php?page=member-db/edit_table.php\" method=\"post\">
+						<form action=\"admin.php?page=member-database/edit_table.php\" method=\"post\">
 							<input type=\"hidden\" name =\"action\" value=\"delete\">
 							<input type=\"hidden\" name =\"column_name\" value=\"%s\">
 							<input type=\"submit\" value=\"Delete Field\" onClick=\"return really();\">
@@ -102,7 +102,7 @@
 			}
 			if ( substr($column['Type'],0,4)=='text' ){
 				printf ("<td>
-					<form action=\"admin.php?page=member-db/edit_table.php\" method=\"post\">
+					<form action=\"admin.php?page=member-database/edit_table.php\" method=\"post\">
 						<input type=\"hidden\" name =\"action\" value=\"modify\">
 						<input type=\"hidden\" name =\"column_name\" value=\"%s\">
 						<input type=\"text\" name=\"type\" value=\"text\" size=\"8\">
@@ -111,7 +111,7 @@
 					</form>
 					</td>
 					<td>
-						<form action=\"admin.php?page=member-db/edit_table.php\" method=\"post\">
+						<form action=\"admin.php?page=member-database/edit_table.php\" method=\"post\">
 							<input type=\"hidden\" name =\"action\" value=\"delete\">
 							<input type=\"hidden\" name =\"column_name\" value=\"%s\">
 							<input type=\"submit\" value=\"Delete Field\" onClick=\"return really();\">
@@ -124,7 +124,7 @@
 	echo '</table>';
 ?>
 <p><b>Add a New Field</b></p>
-<form action="admin.php?page=member-db/edit_table.php" method="post">
+<form action="admin.php?page=member-database/edit_table.php" method="post">
 	<input type="hidden" name="action" value="add">
 	<table>
 		<tr><td align="right">Name: </td><td><input type="text" name="column_name"></td></tr>

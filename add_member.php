@@ -1,7 +1,7 @@
 <div class="wrap">
 <h2>Add New Member</h2>
 <p>All fields required.</p>
-<form action="admin.php?page=member-db/edit_member.php" method="post">
+<form action="admin.php?page=member-database/edit_member.php" method="post">
 	<input type="hidden" name="action" value="insert">
 <table>
 	<?php

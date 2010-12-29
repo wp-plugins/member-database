@@ -41,7 +41,7 @@
 
 <div class="wrap">
 <h2>Edit Member</h2>
-<form action="admin.php?page=member-db/edit_member.php" method="post">
+<form action="admin.php?page=member-database/edit_member.php" method="post">
 	<input type="hidden" name="action" value="update">
 	<input type="hidden" name="id" value="<?php echo $member->id; ?>">
 <table>
