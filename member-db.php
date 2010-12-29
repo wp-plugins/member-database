@@ -36,11 +36,11 @@
 	}
 	
 	function md_plugin_menu() {
-		add_menu_page('Member Database', 'Member Database', 9, 'member-db-plugin', 'md_plugin_page');
-			add_submenu_page('member-db-plugin', 'List Members', 'List Members', 9, 'member-db/list_members.php');
-			add_submenu_page('member-db-plugin', 'Add Member', 'Add Member', 9, 'member-db/add_member.php');
-			add_submenu_page('member-db-plugin', 'Edit Table', 'Edit Table', 9, 'member-db/edit_table.php');
-			add_submenu_page('', 'Edit Member', 'Edit Member', 9, 'member-db/edit_member.php');
+		add_menu_page('Member Database', 'Member Database', 9, 'member-database-plugin', 'md_plugin_page');
+			add_submenu_page('member-database-plugin', 'List Members', 'List Members', 9, 'member-database/list_members.php');
+			add_submenu_page('member-database-plugin', 'Add Member', 'Add Member', 9, 'member-database/add_member.php');
+			add_submenu_page('member-database-plugin', 'Edit Table', 'Edit Table', 9, 'member-database/edit_table.php');
+			add_submenu_page('', 'Edit Member', 'Edit Member', 9, 'member-database/edit_member.php');
 		add_options_page('Member Database', 'Member Database', 'manage_options', 'my-unique-identifier', 'md_plugin_options');
 	}
 
@@ -60,7 +60,7 @@
 		echo '<p>To edit a particular member\'s information, click the "List Members" link in the Member Database menu, then the "Edit" link for the particular member.</p>';
 		echo '<p>To delete a member, click the "List Members" link in the Member Database menu, then the "Delete" link for the particular member.</p>';
 		echo '<p>To place a listing of all members on a page or a post, use the shortcode "[member_directory]". Put this code wherever you want the directory to be displayed.</p>';
-		echo '<p>To download a comma-delimited file of the member data, <a href="../wp-content/plugins/member-db/list_members_csv.php">click here</a>.</p>';
+		echo '<p>To download a comma-delimited file of the member data, <a href="../wp-content/plugins/member-database/list_members_csv.php">click here</a>.</p>';
 		echo '</div>';
 	}	
 	
