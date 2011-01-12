@@ -40,6 +40,7 @@
 			add_submenu_page('member-database-plugin', 'List Members', 'List Members', 9, 'member-database/list_members.php');
 			add_submenu_page('member-database-plugin', 'Add Member', 'Add Member', 9, 'member-database/add_member.php');
 			add_submenu_page('member-database-plugin', 'Edit Table', 'Edit Table', 9, 'member-database/edit_table.php');
+			add_submenu_page('member-database-plugin', 'Import CSV File', 'Import CSV File', 9, 'member-database/upload-csv.php');
 			add_submenu_page('', 'Edit Member', 'Edit Member', 9, 'member-database/edit_member.php');
 		add_options_page('Member Database', 'Member Database', 'manage_options', 'my-unique-identifier', 'md_plugin_options');
 	}

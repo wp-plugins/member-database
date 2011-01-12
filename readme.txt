@@ -2,9 +2,9 @@
 Contributors: DanRomanchik
 Donate link:
 Tags: members, membership
-Tested up to: 3.0.3
+Tested up to: 3.0.4
 Requires at least: 3.0
-Stable tag: 0.1
+Stable tag: 0.2
 
 Maintain membership information for your club or association.
 
@@ -25,5 +25,8 @@ No. That feature will be included in a future version.
 
 == Changelog ==
 
--Version: 0.1
-- Original release
+= Version 0.2 =
+* Added a .csv file import function
+
+= Version: 0.1 =
+* Original release
