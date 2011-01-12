@@ -25,8 +25,8 @@ No. That feature will be included in a future version.
 
 == Changelog ==
 
-= Version 0.2 =
-* Added a .csv file import function
+-Version 0.2
+ - Added a .csv file import function
 
-= Version: 0.1 =
-* Original release
+-Version: 0.1
+ - Original release
