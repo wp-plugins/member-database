@@ -1,10 +1,10 @@
 === Membership Database ===
 Contributors: DanRomanchik
 Donate link:
-Tags: members, membership
+Tags: members, membership, directory
 Tested up to: 3.0.4
 Requires at least: 3.0
-Stable tag: 0.2
+Stable tag: 1.0
 
 Maintain membership information for your club or association.
 
@@ -23,7 +23,16 @@ This plugin allows you to manage a database of membership info for your club or 
 
 No. That feature will be included in a future version.
 
+= What format should I use for importing dates? =
+
+This plugin uses the standard (ISO 8601) yyyy-mm-dd format. Make sure that the dates in your .csv file are in that format.
+
 == Changelog ==
+
+-Version 1.0
+ - Added the ability to sort the membership list on a single field.
+ - Added a mass delete option.
+ - Added formatting option for the membership directory output
 
 -Version 0.2
  - Added a .csv file import function

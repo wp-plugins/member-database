@@ -7,10 +7,18 @@
 		$words = explode (" ", $_POST['column_name']);
 		foreach ($words as $word) $column_name .= strtolower($word)."_"; 
 		$column_name = substr ($column_name,0,strlen($column_name)-1);
-		$sql = "ALTER TABLE ".$table_name." ADD COLUMN ".$column_name." ".$_POST['type']."(".$_POST['size'].")";
-		$wpdb->query($sql);
-		$sql = "ALTER TABLE ".$table_name." MODIFY ".$column_name." ".$_POST['type']."(".$_POST['size'].") AFTER ".$_POST['add_after'];
-		$wpdb->query($sql);
+		if ($_POST['type'] == 'varchar') {
+			$sql = "ALTER TABLE ".$table_name." ADD COLUMN ".$column_name." ".$_POST['type']."(".$_POST['size'].")";
+			$wpdb->query($sql);
+			$sql = "ALTER TABLE ".$table_name." MODIFY ".$column_name." ".$_POST['type']."(".$_POST['size'].") AFTER ".$_POST['add_after'];
+			$wpdb->query($sql);
+		}
+		else {
+			$sql = "ALTER TABLE ".$table_name." ADD COLUMN ".$column_name." ".$_POST['type'];
+			$wpdb->query($sql);
+			$sql = "ALTER TABLE ".$table_name." MODIFY ".$column_name." ".$_POST['type']." AFTER ".$_POST['add_after'];
+			$wpdb->query($sql);
+		}
 	}
 
 	if ($_POST['action']=='modify'){
@@ -128,8 +136,23 @@
 	<input type="hidden" name="action" value="add">
 	<table>
 		<tr><td align="right">Name: </td><td><input type="text" name="column_name"></td></tr>
-		<tr><td align="right">Type: </td><td><input type="text" name="type"> varchar, text, date</td></tr>
-		<tr><td align="right">Size: </td><td><input type="text" name="size" size="3"></td></tr>
+		<tr>
+			<td align="right" valign="top">Type: </td>
+			<td valign="top">
+				<select name="type">
+					<option>varchar</option>
+					<option>text</option>
+					<option>date</option>
+				</select>
+			</td>
+			<td>Select varchar to add a field with a single line of text,<br />text for a text block,<br /> and date to add a date field.
+			</td>
+		</tr>
+		<tr>
+			<td align="right" valign="top">Size: </td>
+			<td valign="top"><input type="text" name="size" size="3"></td>
+			<td>If adding a varchar field, specify the number of characters.<br />Leave blank if adding a text or date field.</td>
+		</tr>
 		<tr>
 			<td align="right">Add After: </td>
 			<td>

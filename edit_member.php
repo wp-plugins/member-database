@@ -67,7 +67,7 @@
 				printf ("<td><input type=\"text\" name=\"%s\" size=\"%s\" value=\"%s\"></td></tr>\r\n", $column['Field'], $size, $member->$column['Field']);
 			}
 			if ( substr($column['Type'],0,4)=='date' ){
-				printf ("<td><input type=\"text\" name=\"%s\" size=\"12\" value=\"%s\"> yyy-mm-dd</td></tr>\r\n", $column['Field'], $member->$column['Field']);
+				printf ("<td><input type=\"text\" name=\"%s\" size=\"12\" value=\"%s\"> yyyy-mm-dd</td></tr>\r\n", $column['Field'], $member->$column['Field']);
 			}
 			if ( substr($column['Type'],0,4)=='text' ){
 				printf ("<td><textarea name=\"%s\" rows =\"5\" cols=\"48\">%s</textarea></tr>\r\n", $column['Field'], $member->$column['Field']);
