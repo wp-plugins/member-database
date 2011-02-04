@@ -4,7 +4,7 @@
     Plugin URI: http://www.webpublishinggroup.com 
     Description: Plugin for managing and displaying information about an organization's members
     Author: Dan Romanchik
-    Version: 1.0beta
+    Version: 1.0
     Author URI: http://www.webpublishinggroup.com 
     */  
 
